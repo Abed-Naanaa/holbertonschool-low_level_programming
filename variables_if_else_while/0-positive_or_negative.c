@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>  // Added to use printf
+#include <stdio.h> /* Added to use printf */
 
 /**
  * main - Entry point
@@ -11,22 +9,21 @@ int main(void)
 {
     int n;
 
-    srand(time(0));  // Initialize random number generator
-    n = rand() - RAND_MAX / 2;  // Generate a random number
-
+    srand(time(0));
+    n = rand() - RAND_MAX / 2;
     if (n > 0)
     {
-        printf("%d is positive\n", n);  // Print positive number
+        printf("%d is positive\n", n);
     }
 
     if (n < 0)
     {
-        printf("%d is negative\n", n);  // Print negative number
+        printf("%d is negative\n", n);
     }
 
-    if (n == 0)  // Corrected comparison operator
+    if (n == 0)  /* Corrected from 'n = 0' to 'n == 0' for comparison */
     {
-        printf("%d is zero\n", n);  // Print zero
+        printf("%d is zero\n", n);
     }
 
     return (0);
