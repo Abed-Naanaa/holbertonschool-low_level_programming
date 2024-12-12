@@ -1,22 +1,17 @@
-#include "_putchar.c"
+#include <unistd.h>
+
 /**
+ *
  * main - Entry point of the program
  *
- * This function writes the string "_putchar" followed by a newline to stdout
- * by calling the _putchar function for each character.
+ * Description: Prints "_putchar" followed by a new line to stdout
  *
- * Return: Always returns 0 (success).
- */
+ * Return: Always 0(sucess)
+ **/
 int main(void)
 {
-    _putchar('_');
-    _putchar('p');
-    _putchar('u');
-    _putchar('t');
-    _putchar('c');
-    _putchar('h');
-    _putchar('a');
-    _putchar('r');
-    _putchar('\n');
-    return (0);
-}
+	char str[] = "_putchar\n";
+	
+	write(1, str, sizeof(str) -1);
+	return (0);
+}	
