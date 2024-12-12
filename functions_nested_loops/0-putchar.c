@@ -1,5 +1,4 @@
-#include "_putchar.c"  // Or use the appropriate header if defined
-
+#include "_putchar.c"
 /**
  * main - Entry point of the program
  *
