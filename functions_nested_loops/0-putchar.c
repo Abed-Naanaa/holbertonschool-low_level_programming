@@ -8,7 +8,7 @@
 * Return: Always 0(sucess)
 **/
 int main(void)
-	i
+	
 {
 char str[] = "_putchar\n"
 write(1, str, sizeof(str) - 1);
