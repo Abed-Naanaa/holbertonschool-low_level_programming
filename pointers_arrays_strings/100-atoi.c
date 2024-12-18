@@ -19,7 +19,7 @@ else if (s[i] >= '0' && s[i] <= '9')
 {
 /* Check for potential overflow before adding the next digit */
 if (result > (unsigned int)(INT_MAX / 10) ||
-   (result == (unsigned int)(INT_MAX / 10) && (s[i] - '0') > (INT_MAX % 10)))
+(result == (unsigned int)(INT_MAX / 10) && (s[i] - '0') > (INT_MAX % 10)))
 {
 return (sign == 1 ? INT_MAX : INT_MIN);
 }
@@ -29,5 +29,5 @@ else if (result > 0)
 break;
 i++;
 }
-return ((int)(result * sign));
+return ((int)(result *sign));
 }
