@@ -8,7 +8,7 @@
 char *leet(char *str)
 {
 char *ptr = str;
-char letters[] = "aeotilAEOTIL";
+char letters[] = "aeotlAEOTL";
 char replacements[] = "4307143071";
 int i;
 while (*ptr)
