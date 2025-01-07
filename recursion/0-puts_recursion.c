@@ -9,10 +9,10 @@ void _puts_recursion(char *s)
 {
 if (*s == '\0')  /* Base case: if the string is empty (null character) */
 {
-putchar('\n');  /* Print a new line */
+_putchar('\n');  /* Print a new line */
 return;         /* Exit the function */
 }
 
-putchar(*s);              /* Print the current character */
+_putchar(*s);              /* Print the current character */
 _puts_recursion(s + 1);   /* Recursively call */
 }
