@@ -7,10 +7,10 @@
  */
 void free_dog(dog_t *d)
 {
-    if (d != NULL)
-    {
-        free(d->name);  /* Free memory allocated for the name */
-        free(d->owner); /* Free memory allocated for the owner */
-        free(d);        /* Free the structure itself */
-    }
+	if (d != NULL)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
