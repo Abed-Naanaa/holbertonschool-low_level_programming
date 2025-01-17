@@ -15,6 +15,9 @@ va_start(args, format);
 
 while (format && format[i])
 {
+if (i > 0)  // Only print separator after the first value
+sep = ", ";
+
 switch (format[i])
 {
 case 'c':
@@ -33,7 +36,6 @@ str = "(nil)";
 printf("%s%s", sep, str);
 break;
 }
-sep = ", ";
 i++;
 }
 
