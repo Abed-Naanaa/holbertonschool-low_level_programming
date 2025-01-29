@@ -1,5 +1,13 @@
 #ifndef MAIN_HEADER_FILE
 #define MAIN_HEADER_FILE
+#include <stddef.h>
+
+typedef struct list_s {
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+
 int _putchar(int c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
