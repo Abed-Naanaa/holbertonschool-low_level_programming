@@ -1,7 +1,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * create_file - creates a file with specified content
  * @filename: the name of the file to create
