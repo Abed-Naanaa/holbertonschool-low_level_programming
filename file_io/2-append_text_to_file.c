@@ -1,7 +1,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * append_text_to_file - appends text at the end of a file
  * @filename: the name of the file
